@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Role for treat employees</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_824599_treat_man.treat_emp</name>
+        <requires_subscription>-1</requires_subscription>
+        <scoped_admin>false</scoped_admin>
+        <suffix>treat_emp</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 02:55:05</sys_created_on>
+        <sys_id>e3c3ef2287049110496499383cbb3515</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_824599_treat_man.treat_emp</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_update_name>sys_user_role_e3c3ef2287049110496499383cbb3515</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 02:55:05</sys_updated_on>
+    </sys_user_role>
+</record_update>
