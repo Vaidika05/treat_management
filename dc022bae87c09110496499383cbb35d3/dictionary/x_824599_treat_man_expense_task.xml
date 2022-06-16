@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Expense Task" max_length="40" name="x_824599_treat_man_expense_task" type="collection">
+        <element label="Group name" mandatory="true" max_length="40" name="group_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="not_req_yet" label="Approval" mandatory="true" max_length="40" name="u_approval" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not requested yet" sequence="0" value="not_req_yet"/>
+                <element inactive_on_update="false" label="Requested" sequence="1" value="requested"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Assigned to" mandatory="true" max_length="32" name="u_assigned_to" reference="sys_user" type="reference"/>
+        <element default="0" label="Pending amount" mandatory="true" max_length="40" name="u_pending_amt" type="integer"/>
+        <element attributes="encode_utf8=false" label="Treat manager" mandatory="true" max_length="32" name="u_treat_mgr" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="u_treat_mgr"/>
+        </index>
+    </element>
+</database>
