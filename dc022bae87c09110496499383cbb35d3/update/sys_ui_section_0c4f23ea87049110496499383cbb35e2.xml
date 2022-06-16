@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 04:02:14</sys_created_on>
-            <sys_id>4e53b32287449110496499383cbb3561</sys_id>
+            <sys_created_on>2022-06-16 08:12:03</sys_created_on>
+            <sys_id>a98c247687089110496499383cbb35ae</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_report" sys_domain="global" view="Default view">0c4f23ea87049110496499383cbb35e2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 04:02:14</sys_updated_on>
+            <sys_updated_on>2022-06-16 08:12:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,69 +18,83 @@
             <element>u_group_name</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 04:02:14</sys_created_on>
-            <sys_id>ce53b32287449110496499383cbb3561</sys_id>
+            <sys_created_on>2022-06-16 08:12:03</sys_created_on>
+            <sys_id>218c247687089110496499383cbb35af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_report" sys_domain="global" view="Default view">0c4f23ea87049110496499383cbb35e2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 04:02:14</sys_updated_on>
+            <sys_updated_on>2022-06-16 08:12:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_treat_mgr</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-06-16 08:12:03</sys_created_on>
+            <sys_id>a18c247687089110496499383cbb35af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_report" sys_domain="global" view="Default view">0c4f23ea87049110496499383cbb35e2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-06-16 08:12:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>expense_amount</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 04:02:14</sys_created_on>
-            <sys_id>4253b32287449110496499383cbb3562</sys_id>
+            <sys_created_on>2022-06-16 08:12:03</sys_created_on>
+            <sys_id>258c247687089110496499383cbb35af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_report" sys_domain="global" view="Default view">0c4f23ea87049110496499383cbb35e2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 04:02:14</sys_updated_on>
+            <sys_updated_on>2022-06-16 08:12:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_members</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 04:02:14</sys_created_on>
-            <sys_id>c253b32287449110496499383cbb3562</sys_id>
+            <sys_created_on>2022-06-16 08:12:03</sys_created_on>
+            <sys_id>a58c247687089110496499383cbb35af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_report" sys_domain="global" view="Default view">0c4f23ea87049110496499383cbb35e2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 04:02:14</sys_updated_on>
+            <sys_updated_on>2022-06-16 08:12:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 04:02:14</sys_created_on>
-            <sys_id>4653b32287449110496499383cbb3562</sys_id>
+            <sys_created_on>2022-06-16 08:12:03</sys_created_on>
+            <sys_id>298c247687089110496499383cbb35af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_report" sys_domain="global" view="Default view">0c4f23ea87049110496499383cbb35e2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 04:02:14</sys_updated_on>
+            <sys_updated_on>2022-06-16 08:12:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>u_type</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 04:02:14</sys_created_on>
-            <sys_id>c653b32287449110496499383cbb3562</sys_id>
+            <sys_created_on>2022-06-16 08:12:03</sys_created_on>
+            <sys_id>a98c247687089110496499383cbb35af</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_report" sys_domain="global" view="Default view">0c4f23ea87049110496499383cbb35e2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 04:02:14</sys_updated_on>
+            <sys_updated_on>2022-06-16 08:12:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

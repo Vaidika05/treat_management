@@ -5,11 +5,15 @@
         <element label="Short description" mandatory="true" max_length="40" name="short_description" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Group name" mandatory="true" max_length="40" name="u_group_name" type="string"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Members involved" mandatory="true" max_length="1024" name="u_members" reference="sys_user" type="glide_list"/>
+        <element attributes="encode_utf8=false" label="Treat manager" mandatory="true" max_length="32" name="u_treat_mgr" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Type of expense" max_length="40" name="u_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Company-sponsored" sequence="0" value="cs"/>
                 <element inactive_on_update="false" label="Self-sponsored" sequence="1" value="ss"/>
             </choice>
         </element>
+        <index name="index">
+            <element name="u_treat_mgr"/>
+        </index>
     </element>
 </database>
