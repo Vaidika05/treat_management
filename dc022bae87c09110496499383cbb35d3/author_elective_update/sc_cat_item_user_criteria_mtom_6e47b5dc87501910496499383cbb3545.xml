@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="DELETE">
+        <sc_cat_item display_value="Ask a question">0bc1bd5887501910496499383cbb3592</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:29:36</sys_created_on>
+        <sys_id>6e47b5dc87501910496499383cbb3545</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ask a question.Any User</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_6e47b5dc87501910496499383cbb3545</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:29:36</sys_updated_on>
+        <user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Treat management">dc022bae87c09110496499383cbb35d3</application>
+        <file_path/>
+        <instance_id>8302ce08dbd317c41ddcf22ebf96197c</instance_id>
+        <instance_name>dev63979</instance_name>
+        <name>sc_cat_item_user_criteria_mtom_6e47b5dc87501910496499383cbb3545</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom"><sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Ask a question">0bc1bd5887501910496499383cbb3592</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-21 05:29:36</sys_created_on><sys_id>6e47b5dc87501910496499383cbb3545</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Ask a question.Any User</sys_name><sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package><sys_policy/><sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope><sys_update_name>sc_cat_item_user_criteria_mtom_6e47b5dc87501910496499383cbb3545</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-21 05:29:36</sys_updated_on><user_criteria display_value="Any User">fb1166d64fff0200086eeed18110c7ab</user_criteria></sc_cat_item_user_criteria_mtom></record_update>]]></payload>
+        <payload_hash>1296258365</payload_hash>
+        <record_name>Ask a question.Any User</record_name>
+        <reverted_from/>
+        <source>a58798be87849110496499383cbb3554</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:29:36</sys_created_on>
+        <sys_id>6e47b5dc87501910496499383cbb3548</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18184bcd2720000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:29:36</sys_updated_on>
+        <type>Catalog Item Available for</type>
+        <update_guid>e247b5dcad501910c8cb986a7335cb48</update_guid>
+        <update_guid_history>e247b5dcad501910c8cb986a7335cb48:1296258365</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Ask a question.Any User">f257f5dc87501910496499383cbb35f3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:29:53</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_mtom">sc_cat_item_user_criteria_mtom</sys_db_object>
+        <sys_id>aec27a89c10f4ac99e63fb88c50578e1</sys_id>
+        <sys_metadata>6e47b5dc87501910496499383cbb3545</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ask a question.Any User</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_scope_delete display_value="">361f82dccbad477e9936bf359f1ceda4</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_6e47b5dc87501910496499383cbb3545</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_mtom_6e47b5dc87501910496499383cbb3545">6e47b5dc87501910496499383cbb3548</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:29:53</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
