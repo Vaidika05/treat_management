@@ -8,7 +8,7 @@
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>Expense Report Populate Members Involved</name>
+        <name>Populate Members involved and Treat mgr</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
     if (!g_form.isNewRecord()) {
@@ -24,9 +24,12 @@
 
     // When the response is back from the server
     function populateMembersInvolvedField(response) {
-        var membersFromScriptInclude = response.responseXML.documentElement.getAttribute("answer");
+        var answer = response.responseXML.documentElement.getAttribute("answer");
+        var result = JSON.parse(answer);
         g_form.clearValue('u_members');
-        g_form.setValue('u_members', membersFromScriptInclude);
+        g_form.setValue('u_members', result.members);
+        g_form.clearValue('u_treat_mgr');
+        g_form.setValue('u_treat_mgr', result.manager);
     }
 
 }]]></script>
@@ -36,15 +39,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a62a083687849110496499383cbb3588</sys_id>
-        <sys_mod_count>5</sys_mod_count>
-        <sys_name>Expense Report Populate Members Involved</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Populate Members involved and Treat mgr</sys_name>
         <sys_overrides/>
         <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
         <sys_update_name>sys_script_client_a62a083687849110496499383cbb3588</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-16 06:04:59</sys_updated_on>
+        <sys_updated_on>2022-06-22 10:52:38</sys_updated_on>
         <table>x_824599_treat_man_expense_report</table>
         <type>onChange</type>
         <ui_type>0</ui_type>
