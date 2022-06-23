@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>expense_report_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Expense Report List</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  data.reports = [];
+	var reportGR = new GlideRecord('x_824599_treat_man_expense_report');
+	reportGR.orderByDesc('sys_created_on');
+	reportGR.query();
+	while(reportGR.next()) {
+		var reportObj = {};
+		$sp.getRecordDisplayValues(reportObj, reportGR, 'number,u_group_name,u_treat_mgr,expense_amount,u_members,u_members_attended,short_description,sys_created_on');
+		//push the populated obj into the array
+		data.reports.push(reportObj);
+	}
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-23 11:26:24</sys_created_on>
+        <sys_id>382c11c587d89910496499383cbb3528</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Expense Report List</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_update_name>sp_widget_382c11c587d89910496499383cbb3528</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-23 13:25:37</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h3 class="panel-title pull-left">
+      Expense Reports
+    </h3>
+  </div>
+  <div class="list-group" style="height: 250px;overflow-x: hidden;overflow-y: auto">
+    <a class="list-group-item" ng-repeat="report in data.reports">
+      <h4 class="list-group-item-heading">
+        {{report.number}}
+      </h4>
+      <p class="list-group-item-text">
+        {{report.u_group_name}}, {{report.u_treat_mgr}}
+      </p>
+      <button type="button" data-toggle="collapse" data-target="#{{report.number}}">Details</button>
+      	<div id="{{report.number}}" class="collapse">
+          <li>Created on: {{report.sys_created_on}}</li>
+          <li>Expense amount: {{report.expense_amount}}</li>
+          <li>Members attended: {{report.u_members_attended}}</li>
+          <li>Description: {{report.short_description}}</li>
+        </div>
+    </a>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
