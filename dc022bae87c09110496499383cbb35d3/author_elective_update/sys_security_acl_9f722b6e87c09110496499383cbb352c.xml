@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description/>
+        <name>x_824599_treat_man_group</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 02:48:35</sys_created_on>
+        <sys_id>9f722b6e87c09110496499383cbb352c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_824599_treat_man_group</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_update_name>sys_security_acl_9f722b6e87c09110496499383cbb352c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 02:48:35</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Treat management">dc022bae87c09110496499383cbb35d3</application>
+        <file_path/>
+        <instance_id>8302ce08dbd317c41ddcf22ebf96197c</instance_id>
+        <instance_name>dev63979</instance_name>
+        <name>sys_security_acl_9f722b6e87c09110496499383cbb352c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description/><name>x_824599_treat_man_group</name><operation display_value="create">create</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-06-16 02:48:35</sys_created_on><sys_id>9f722b6e87c09110496499383cbb352c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_824599_treat_man_group</sys_name><sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package><sys_policy/><sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope><sys_update_name>sys_security_acl_9f722b6e87c09110496499383cbb352c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-06-16 02:48:35</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-214982361</payload_hash>
+        <record_name>x_824599_treat_man_group</record_name>
+        <reverted_from/>
+        <source>d8022bae87c09110496499383cbb35d5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 02:48:35</sys_created_on>
+        <sys_id>9b722b6e87c09110496499383cbb352f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1816a699c1a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 02:48:35</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>d3722b6ed8c09110b5adb095e0617c2f</update_guid>
+        <update_guid_history>d3722b6ed8c09110b5adb095e0617c2f:-214982361</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-27 14:03:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>72b928d71f4f40eeb3c7e1d8465b68b9</sys_id>
+        <sys_metadata>9f722b6e87c09110496499383cbb352c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_824599_treat_man_group</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_parent display_value="">927267ee87c09110496499383cbb3580</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_scope_delete display_value="">361f82dccbad477e9936bf359f1ceda4</sys_scope_delete>
+        <sys_update_name>sys_security_acl_9f722b6e87c09110496499383cbb352c</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_9f722b6e87c09110496499383cbb352c">9b722b6e87c09110496499383cbb352f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-27 14:03:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
