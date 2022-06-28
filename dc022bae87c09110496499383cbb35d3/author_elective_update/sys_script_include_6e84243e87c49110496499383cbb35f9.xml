@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_824599_treat_man.CreateEmpTasks</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Script Include to create Expense Task record after an Expense Report is created.</description>
+        <name>CreateEmpTasks</name>
+        <script><![CDATA[var CreateEmpTasks = Class.create();
+CreateEmpTasks.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    createTasks: function() {
+        gs.addInfoMessage("Script Include execution started");
+		var tm = this.getParameter('sysparm_treatManager');
+		var members = this.getParameter('sysparm_members');
+		var amt = this.getParameter('sysparm_pendingAmt');
+		var memArray = members.split(",");
+		
+		for(i=0; i<memArray.length; i++) {
+			var rec = new GlideRecord('x_824599_treat_man_expense_task');
+			rec.addQuery('u_assigned_to', memArray[i]);
+			rec.addQuery('u_treat_mgr', tm);
+			rec.query();
+			
+			if(rec.next()) {
+				var pa = rec.getValue('u_pending_amt');
+				pa = pa.replaceAll(',', '');
+				var newAmt = parseInt(pa) + parseInt(amt);
+				rec.setValue('u_pending_amt', newAmt);
+				rec.setValue('u_approval', 'not_req_yet');
+				rec.update();
+				gs.addInfoMessage("Record updated for:" + memArray[i]);
+			}else {
+				var et = new GlideRecord('x_824599_treat_man_expense_task');
+				et.initialize();
+				et.setValue('u_treat_mgr', tm);
+				et.setValue('u_assigned_to', memArray[i]);
+				et.setValue('u_pending_amt', amt);
+				et.insert();
+				gs.addInfoMessage("New record created for:" + memArray[i]);
+			}
+		}
+    },
+    type: 'CreateEmpTasks'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 07:39:12</sys_created_on>
+        <sys_id>6e84243e87c49110496499383cbb35f9</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>CreateEmpTasks</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_update_name>sys_script_include_6e84243e87c49110496499383cbb35f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 13:57:35</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Treat management">dc022bae87c09110496499383cbb35d3</application>
+        <file_path/>
+        <instance_id>8302ce08dbd317c41ddcf22ebf96197c</instance_id>
+        <instance_name>dev63979</instance_name>
+        <name>sys_script_include_6e84243e87c49110496499383cbb35f9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_824599_treat_man.CreateEmpTasks&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Script Include to create Expense Task record after an Expense Report is created.&lt;/description&gt;&lt;name&gt;CreateEmpTasks&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var CreateEmpTasks = Class.create();
+CreateEmpTasks.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    createTasks: function() {
+        gs.addInfoMessage("Script Include execution started");
+		var tm = this.getParameter('sysparm_treatManager');
+		var members = this.getParameter('sysparm_members');
+		var amt = this.getParameter('sysparm_pendingAmt');
+		var memArray = members.split(",");
+		
+		for(i=0; i&lt;memArray.length; i++) {
+			var rec = new GlideRecord('x_824599_treat_man_expense_task');
+			rec.addQuery('u_assigned_to', memArray[i]);
+			rec.addQuery('u_treat_mgr', tm);
+			rec.query();
+			
+			if(rec.next()) {
+				var pa = rec.getValue('u_pending_amt');
+				pa = pa.replaceAll(',', '');
+				var newAmt = parseInt(pa) + parseInt(amt);
+				rec.setValue('u_pending_amt', newAmt);
+				rec.setValue('u_approval', 'not_req_yet');
+				rec.update();
+				gs.addInfoMessage("Record updated for:" + memArray[i]);
+			}else {
+				var et = new GlideRecord('x_824599_treat_man_expense_task');
+				et.initialize();
+				et.setValue('u_treat_mgr', tm);
+				et.setValue('u_assigned_to', memArray[i]);
+				et.setValue('u_pending_amt', amt);
+				et.insert();
+				gs.addInfoMessage("New record created for:" + memArray[i]);
+			}
+		}
+    },
+    type: 'CreateEmpTasks'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-06-16 07:39:12&lt;/sys_created_on&gt;&lt;sys_id&gt;6e84243e87c49110496499383cbb35f9&lt;/sys_id&gt;&lt;sys_mod_count&gt;29&lt;/sys_mod_count&gt;&lt;sys_name&gt;CreateEmpTasks&lt;/sys_name&gt;&lt;sys_package display_value="Treat management" source="x_824599_treat_man"&gt;dc022bae87c09110496499383cbb35d3&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Treat management"&gt;dc022bae87c09110496499383cbb35d3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_6e84243e87c49110496499383cbb35f9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-06-16 13:57:35&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>551732667</payload_hash>
+        <record_name>CreateEmpTasks</record_name>
+        <reverted_from/>
+        <source>a58798be87849110496499383cbb3554</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 13:57:35</sys_created_on>
+        <sys_id>c79b717a870c9110496499383cbb358d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1816cce19bb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 13:57:35</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>8f9b717a0e0c91105c92f019b2f77e8c</update_guid>
+        <update_guid_history>8f9b717a0e0c91105c92f019b2f77e8c:551732667,8992a5f601c891100a700fe07299a0bd:-806210530,2552613a42c89110a4e4604808810573:-1851723488,f9c169f60ac891104951705974868948:-271894208,2e916db66cc891102354ee996baee5ec:769757905,29f06db685c891106b657d76ea123a3c:-811130320,e7c021b614c89110d95b5a3b990c89d3:1587149696,8870ad7676c891106919d7021c02b141:-920664552,1c30ad76d5c89110309ee57cd51a6c3a:835167885,060029761bc891100fe7dff9be483bf5:-1615718752,75df997684c89110144726f60fc8767c:1116953608,07afd57636c89110660bc4d04b2c96c2:237194013,198f517624c891102ed967c221672039:125999513,9d6f9136e8c891109b0c82a37900121f:1207282025,432fd53666c89110a5660f195da59293:-1904976288,020fd5366ac891105e9e2a7af44bdf8e:853563297,02aed536e8c891103f3ba15ab8d5a065:-256808215,693e11361fc891108b4dc3d6ec665296:-1051708697,631eddf260c8911085afedb30e0fac22:1946788208,61edd5f28dc891100b7f5143a6206aa0:1040068163,752899bed9889110e845c72c77375a0e:-108993847,9d089d7acc889110e520c518febfc928:676531286,0fa791be05889110d7313f5cc8ca736e:-163284263,ac4f05b29a88911091614268105a3305:587241649,f09d0d72dd889110d3cde13c28e79dec:-748377035,00eb4d728e889110c2cac0d02e90a617:587241649,1e6b85723888911093bc3a82d1e4de25:1648895219,1c8a0932d088911029a6f84b4e730910:-1446413913,ea29453eac48911092d31176482dae2d:1415995881,9c05243e44c49110b3c14bf6c4a06cfe:-1294693548</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-28 06:22:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>236190ce6a9c43b5a1facf00f12d8c69</sys_id>
+        <sys_metadata>6e84243e87c49110496499383cbb35f9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CreateEmpTasks</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_scope_delete display_value="">361f82dccbad477e9936bf359f1ceda4</sys_scope_delete>
+        <sys_update_name>sys_script_include_6e84243e87c49110496499383cbb35f9</sys_update_name>
+        <sys_update_version display_value="sys_script_include_6e84243e87c49110496499383cbb35f9">c79b717a870c9110496499383cbb358d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-28 06:22:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

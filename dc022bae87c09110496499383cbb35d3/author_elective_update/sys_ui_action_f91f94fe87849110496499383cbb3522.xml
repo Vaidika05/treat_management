@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>create_task</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>This UI Action is meant to create/update a task corresponding to each member involved in the expense</comments>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint>Create/Update the Event Task record for each member involved</hint>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Create Task</name>
+        <onclick>createTask()</onclick>
+        <order>300</order>
+        <script><![CDATA[function createTask() {
+    g_form.addInfoMessage("Button clicked");
+    var ga = new GlideAjax('CreateEmpTasks');
+
+    ga.addParam('sysparm_name', 'createTasks');
+    ga.addParam('sysparm_treatManager', g_form.getValue('u_treat_mgr'));
+
+    var members = g_form.getValue('u_members');
+
+    ga.addParam('sysparm_members', members);
+
+    var total = members.split(",");
+	var expense = g_form.getValue('expense_amount');
+	// Since Expense amount is a string containing commas
+	// We remove commas before integer conversion
+	expense = expense.replaceAll(',', '');
+    var amt = parseInt(expense) / total.length;
+    
+	ga.addParam('sysparm_pendingAmt', amt);
+
+    ga.getXML(callback);
+
+    function callback(response) {
+        g_form.addInfoMessage("Tasks created!");
+    }
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 07:19:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f91f94fe87849110496499383cbb3522</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Create Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_update_name>sys_ui_action_f91f94fe87849110496499383cbb3522</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 11:14:37</sys_updated_on>
+        <table>x_824599_treat_man_expense_report</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Treat management">dc022bae87c09110496499383cbb35d3</application>
+        <file_path/>
+        <instance_id>8302ce08dbd317c41ddcf22ebf96197c</instance_id>
+        <instance_name>dev63979</instance_name>
+        <name>sys_ui_action_f91f94fe87849110496499383cbb3522</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;create_task&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;This UI Action is meant to create/update a task corresponding to each member involved in the expense&lt;/comments&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint&gt;Create/Update the Event Task record for each member involved&lt;/hint&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Create Task&lt;/name&gt;&lt;onclick&gt;createTask()&lt;/onclick&gt;&lt;order&gt;300&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function createTask() {
+    g_form.addInfoMessage("Button clicked");
+    var ga = new GlideAjax('CreateEmpTasks');
+
+    ga.addParam('sysparm_name', 'createTasks');
+    ga.addParam('sysparm_treatManager', g_form.getValue('u_treat_mgr'));
+
+    var members = g_form.getValue('u_members');
+
+    ga.addParam('sysparm_members', members);
+
+    var total = members.split(",");
+	var expense = g_form.getValue('expense_amount');
+	// Since Expense amount is a string containing commas
+	// We remove commas before integer conversion
+	expense = expense.replaceAll(',', '');
+    var amt = parseInt(expense) / total.length;
+    
+	ga.addParam('sysparm_pendingAmt', amt);
+
+    ga.getXML(callback);
+
+    function callback(response) {
+        g_form.addInfoMessage("Tasks created!");
+    }
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;false&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-06-16 07:19:35&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f91f94fe87849110496499383cbb3522&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Task&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Treat management" source="x_824599_treat_man"&gt;dc022bae87c09110496499383cbb35d3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Treat management"&gt;dc022bae87c09110496499383cbb35d3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_f91f94fe87849110496499383cbb3522&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-06-16 11:14:37&lt;/sys_updated_on&gt;&lt;table&gt;x_824599_treat_man_expense_report&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-747406412</payload_hash>
+        <record_name>Create Task</record_name>
+        <reverted_from/>
+        <source>a58798be87849110496499383cbb3554</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-16 11:14:37</sys_created_on>
+        <sys_id>bf4699ba87889110496499383cbb3504</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1816c38e74f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-16 11:14:37</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>f74699ba278891109f6c0cb03c51f304</update_guid>
+        <update_guid_history>f74699ba278891109f6c0cb03c51f304:-747406412,dec0d1f6ee8891106c47ba21d035d97f:914126737,9a6091b6dd8891103910122050690817:-435563732,453fcd76f0889110eae85317a0db24fb:1398979513,45ae0576ad889110d7f2591f52407f64:-800010163,167e8d3692889110ff504b6cd03c7380:-1291320335,5aedc1b2ac8891106df39f0ad9518cd1:648053661,ee4dc5f2b98891104ba25b86d72bfe8e:-1491494647,8bea493272889110efc8d23e38426b49:1626850064,99e9453205889110e595b19c60f2723b:-1491494647,3e9841fe43489110f6694504ec8e278e:-795894922,9517e8bee9c4911028a87827ec9a9385:1325860309,b706243e23c49110e3c1e8f0d3076f85:1605707543,9ec2e03e56c49110f4019f4993a9be77:122983011,8d80a47a1cc49110024161ab9f158d4f:1448269107</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-28 06:21:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>5a47038d9234447ca4022552b25b9da9</sys_id>
+        <sys_metadata>f91f94fe87849110496499383cbb3522</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Task</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_parent display_value="Expense Report">28bc2b6a87049110496499383cbb3565</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_scope_delete display_value="">361f82dccbad477e9936bf359f1ceda4</sys_scope_delete>
+        <sys_update_name>sys_ui_action_f91f94fe87849110496499383cbb3522</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_f91f94fe87849110496499383cbb3522">bf4699ba87889110496499383cbb3504</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-28 06:21:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Expense Task" max_length="40" name="x_824599_treat_man_expense_task" sizeclass="2" type="collection">
+    <element label="Expense Task" max_length="40" name="x_824599_treat_man_expense_task" sizeclass="7" type="collection">
         <element label="Approval history" max_length="4000" name="approval_history" type="journal"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="not_req_yet" label="Approval" mandatory="true" max_length="40" name="u_approval" type="string">
             <choice>
                 <element inactive_on_update="false" label="Not requested yet" sequence="0" value="not_req_yet"/>
@@ -11,6 +11,7 @@
             </choice>
         </element>
         <element attributes="encode_utf8=false" label="Assigned to" mandatory="true" max_length="32" name="u_assigned_to" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Expense Report record" mandatory="true" max_length="32" name="u_expense_report" reference="x_824599_treat_man_expense_report" type="reference"/>
         <element default="0" label="Pending amount" mandatory="true" max_length="40" name="u_pending_amt" type="integer"/>
         <element attributes="encode_utf8=false" label="Treat manager" mandatory="true" max_length="32" name="u_treat_mgr" reference="sys_user" type="reference"/>
         <index name="index">
@@ -18,6 +19,9 @@
         </index>
         <index name="index2">
             <element name="u_treat_mgr"/>
+        </index>
+        <index name="index3">
+            <element name="u_expense_report"/>
         </index>
     </element>
 </database>

@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 10:58:57</sys_created_on>
-            <sys_id>22b2557a87889110496499383cbb3528</sys_id>
+            <sys_created_on>2022-06-28 06:04:03</sys_created_on>
+            <sys_id>6f42ca2e87901150496499383cbb35f7</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_task" sys_domain="global" view="Default view">d15d3cf287489110496499383cbb3528</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 10:58:57</sys_updated_on>
+            <sys_updated_on>2022-06-28 06:04:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>u_treat_mgr</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 10:58:57</sys_created_on>
-            <sys_id>a6b2557a87889110496499383cbb3528</sys_id>
+            <sys_created_on>2022-06-28 06:04:03</sys_created_on>
+            <sys_id>7742ca2e87901150496499383cbb35f8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_task" sys_domain="global" view="Default view">d15d3cf287489110496499383cbb3528</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 10:58:57</sys_updated_on>
+            <sys_updated_on>2022-06-28 06:04:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>u_assigned_to</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 10:58:57</sys_created_on>
-            <sys_id>2ab2557a87889110496499383cbb3528</sys_id>
+            <sys_created_on>2022-06-28 06:04:03</sys_created_on>
+            <sys_id>7b42ca2e87901150496499383cbb35f8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_task" sys_domain="global" view="Default view">d15d3cf287489110496499383cbb3528</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 10:58:57</sys_updated_on>
+            <sys_updated_on>2022-06-28 06:04:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>u_pending_amt</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 10:58:57</sys_created_on>
-            <sys_id>aab2557a87889110496499383cbb3528</sys_id>
+            <sys_created_on>2022-06-28 06:04:03</sys_created_on>
+            <sys_id>7f42ca2e87901150496499383cbb35f8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_task" sys_domain="global" view="Default view">d15d3cf287489110496499383cbb3528</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 10:58:57</sys_updated_on>
+            <sys_updated_on>2022-06-28 06:04:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,27 +60,41 @@
             <element>u_approval</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-16 10:58:57</sys_created_on>
-            <sys_id>2eb2557a87889110496499383cbb3528</sys_id>
+            <sys_created_on>2022-06-28 06:04:03</sys_created_on>
+            <sys_id>7342ca2e87901150496499383cbb35f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_task" sys_domain="global" view="Default view">d15d3cf287489110496499383cbb3528</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-16 10:58:57</sys_updated_on>
+            <sys_updated_on>2022-06-28 06:04:03</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_expense_report</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-06-28 06:04:03</sys_created_on>
+            <sys_id>7742ca2e87901150496499383cbb35f9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_task" sys_domain="global" view="Default view">d15d3cf287489110496499383cbb3528</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-06-28 06:04:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>approval_history</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2022-06-17 07:06:38</sys_created_on>
-            <sys_id>0527edcf8748d110496499383cbb357c</sys_id>
+            <sys_created_on>2022-06-28 06:04:03</sys_created_on>
+            <sys_id>7b42ca2e87901150496499383cbb35f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_824599_treat_man_expense_task" sys_domain="global" view="Default view">d15d3cf287489110496499383cbb3528</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2022-06-17 07:06:38</sys_updated_on>
+            <sys_updated_on>2022-06-28 06:04:03</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

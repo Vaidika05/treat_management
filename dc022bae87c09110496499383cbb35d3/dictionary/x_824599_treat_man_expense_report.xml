@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Expense Report" max_length="40" name="x_824599_treat_man_expense_report" sizeclass="3" type="collection">
         <element label="Expense amount" mandatory="true" max_length="40" name="expense_amount" type="integer"/>
-        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Group name" mandatory="true" max_length="32" name="group_name" reference="sys_user_group" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Short description" mandatory="true" max_length="40" name="short_description" type="string"/>
         <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Members involved" mandatory="true" max_length="1024" name="u_members" reference="sys_user" type="glide_list"/>
         <element default="0" label="Members attended" max_length="40" name="u_members_attended" type="integer"/>
@@ -14,6 +15,9 @@
         </element>
         <index name="index">
             <element name="u_treat_mgr"/>
+        </index>
+        <index name="index2">
+            <element name="group_name"/>
         </index>
     </element>
 </database>
