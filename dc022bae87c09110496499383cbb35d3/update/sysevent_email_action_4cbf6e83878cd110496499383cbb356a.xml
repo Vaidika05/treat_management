@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
         <action_insert>true</action_insert>
-        <action_update>true</action_update>
+        <action_update>false</action_update>
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_824599_treat_man_expense_task</collection>
-        <condition table="x_824599_treat_man_expense_task">u_pending_amt!=0^u_approval=not_req_yet^EQ<item endquery="false" field="u_pending_amt" goto="false" newquery="false" operator="!=" or="false" value="0"/>
-            <item display_value="Not requested yet" endquery="false" field="u_approval" goto="false" newquery="false" operator="=" or="false" value="not_req_yet"/>
+        <condition table="x_824599_treat_man_expense_task">u_approval=not_req_yet^EQ<item display_value="Not requested yet" endquery="false" field="u_approval" goto="false" newquery="false" operator="=" or="false" value="not_req_yet"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -40,9 +39,8 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p>Hello ${u_assigned_to.first_name},</p>
-<p>Treat manager ${u_treat_mgr.name} has requested a treat contribution of Rs.${u_pending_amt}.</p>
-<p>Click here to view the Expense Task record ${URI_REF}</p>
-<p>Kindly make the contribution and send the request for his/her approval at the earliest convenience.</p>]]></message_html>
+<p>${mail_script:request_contributions}</p>
+<p>Kindly make the contribution and send the request for treat managers' approval at the earliest convenience.</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>Requested treat contributions</name>
@@ -56,7 +54,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Treat contribution requested from ${u_treat_mgr.name}</subject>
+        <subject>Treat contribution requested!!!</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -64,7 +62,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4cbf6e83878cd110496499383cbb356a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Requested treat contributions</sys_name>
         <sys_overrides/>
         <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
@@ -72,7 +70,7 @@
         <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
         <sys_update_name>sysevent_email_action_4cbf6e83878cd110496499383cbb356a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-17 12:44:21</sys_updated_on>
+        <sys_updated_on>2022-06-28 09:46:33</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
