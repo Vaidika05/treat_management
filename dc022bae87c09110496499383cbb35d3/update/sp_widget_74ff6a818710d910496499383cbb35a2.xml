@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <client_script><![CDATA[api.controller=function($scope,spUtil) {
+  /* widget controller */
+  var c = this;
+	$scope.requestApproval = function(task) {
+		$scope.data.rec = angular.copy(task);
+		
+		spUtil.update($scope);
+	}
+	
+	spUtil.recordWatch($scope, "x_824599_treat_man_expense_task", "", function(response) {
+		spUtil.update($scope);
+	});
+};]]></client_script>
         <controller_as>c</controller_as>
         <css/>
         <data_table>sp_instance</data_table>
@@ -23,13 +35,23 @@
 	if(!gs.hasRole("admin") && !gs.hasRole("x_824599_treat_man.treat_mgr")) {
 		taskGR.addQuery('u_assigned_to', gs.getUser().getID());
 	}
-	taskGR.orderByDesc('sys_updated_on');
 	taskGR.query();
 	while(taskGR.next()) {
 		var taskObj = {};
 		$sp.getRecordDisplayValues(taskObj, taskGR, 'number,u_assigned_to,u_treat_mgr,u_pending_amt,u_approval,sys_updated_on');
 		//push the populated obj into the array
 		data.tasks.push(taskObj);
+	}
+	
+	if(input) {
+		var gr = new GlideRecord('x_824599_treat_man_expense_task');
+		gr.addQuery('number', input.rec.number);
+		gr.query();
+		
+		if(gr.next()) {
+			gr.setValue('u_approval', 'requested');
+			gr.update();
+		}
 	}
 
 })();]]></script>
@@ -38,14 +60,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-06-23 17:32:35</sys_created_on>
         <sys_id>74ff6a818710d910496499383cbb35a2</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Expense Task List</sys_name>
         <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
         <sys_policy/>
         <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
         <sys_update_name>sp_widget_74ff6a818710d910496499383cbb35a2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-23 17:50:12</sys_updated_on>
+        <sys_updated_on>2022-07-04 11:38:34</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default">
   <div class="panel-heading clearfix">
     <h3 class="panel-title pull-left">
@@ -61,11 +83,12 @@
         {{task.u_assigned_to}}, {{task.u_treat_mgr}}
       </p>
       <button type="button" data-toggle="collapse" data-target="#{{task.number}}">Details</button>
-      	<div id="{{task.number}}" class="collapse">
-          <li>Updated on: {{task.sys_updated_on}}</li>
-          <li>Pending amount: {{task.u_pending_amt}}</li>
-          <li>Approval: {{task.u_approval}}</li>
-        </div>
+      <span ng-if="task.u_approval != 'Approved' && task.u_approval != 'Requested'"><button type="button" ng-click="requestApproval(task)">Paid</button></span>
+      <div id="{{task.number}}" class="collapse">
+        <li>Updated on: {{task.sys_updated_on}}</li>
+        <li>Pending amount: {{task.u_pending_amt}}</li>
+        <li>Approval: {{task.u_approval}}</li>
+      </div>
     </a>
   </div>
 </div>]]></template>
