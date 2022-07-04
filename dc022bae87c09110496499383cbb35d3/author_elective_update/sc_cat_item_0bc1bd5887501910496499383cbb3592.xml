@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item">
+    <sc_cat_item action="DELETE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <category/>
+        <checked_out>false</checked_out>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan/>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Treat managers are here to answer your questions. Shoot them with any query regarding an Expense Task!</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow display_value="Service Catalog item request">30f3d26187e92300e0ef0cf888cb0b91</flow_designer_flow>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Ask a question</name>
+        <no_attachment_v2>true</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>true</no_cart_v2>
+        <no_delivery_time_v2>true</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>true</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>true</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=0bc1bd5887501910496499383cbb3592&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <request_method>submit</request_method>
+        <roles/>
+        <sc_catalogs/>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template display_value="AES Standard items in Service Catalog">03302dd377023010f082d599cf5a99ba</sc_template>
+        <short_description>Catalog Item to ask question to treat manager</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state>published</state>
+        <sys_class_name>sc_cat_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:05:35</sys_created_on>
+        <sys_id>0bc1bd5887501910496499383cbb3592</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>Ask a question</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_update_name>sc_cat_item_0bc1bd5887501910496499383cbb3592</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-04 13:53:03</sys_updated_on>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item>
+    <sys_translated_text action="DELETE" query="documentkey=0bc1bd5887501910496499383cbb3592"/>
+    <fx_price action="DELETE" query="id=0bc1bd5887501910496499383cbb3592"/>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price</field>
+        <id>0bc1bd5887501910496499383cbb3592</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:05:35</sys_created_on>
+        <sys_id>c3c1bd5887501910496499383cbb3597</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:05:35</sys_updated_on>
+        <table>sc_cat_item</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Treat management">dc022bae87c09110496499383cbb35d3</application>
+        <file_path/>
+        <instance_id>8302ce08dbd317c41ddcf22ebf96197c</instance_id>
+        <instance_name>dev63979</instance_name>
+        <name>sc_cat_item_0bc1bd5887501910496499383cbb3592</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sc_cat_item"&gt;&lt;sc_cat_item action="INSERT_OR_UPDATE"&gt;&lt;access_type&gt;restricted&lt;/access_type&gt;&lt;active&gt;true&lt;/active&gt;&lt;availability&gt;on_desktop&lt;/availability&gt;&lt;billable&gt;false&lt;/billable&gt;&lt;category/&gt;&lt;checked_out&gt;false&lt;/checked_out&gt;&lt;cost&gt;0&lt;/cost&gt;&lt;custom_cart/&gt;&lt;delivery_plan/&gt;&lt;delivery_plan_script/&gt;&lt;delivery_time&gt;1970-01-03 00:00:00&lt;/delivery_time&gt;&lt;description&gt;&lt;![CDATA[&lt;p&gt;Treat managers are here to answer your questions. Shoot them with any query regarding an Expense Task!&lt;/p&gt;]]&gt;&lt;/description&gt;&lt;display_price_property&gt;non_zero&lt;/display_price_property&gt;&lt;entitlement_script/&gt;&lt;flow_designer_flow display_value="Service Catalog item request"&gt;30f3d26187e92300e0ef0cf888cb0b91&lt;/flow_designer_flow&gt;&lt;fulfillment_automation_level&gt;unspecified&lt;/fulfillment_automation_level&gt;&lt;group/&gt;&lt;hide_sp&gt;false&lt;/hide_sp&gt;&lt;icon/&gt;&lt;ignore_price&gt;true&lt;/ignore_price&gt;&lt;image/&gt;&lt;location/&gt;&lt;mandatory_attachment&gt;false&lt;/mandatory_attachment&gt;&lt;meta/&gt;&lt;mobile_hide_price&gt;false&lt;/mobile_hide_price&gt;&lt;mobile_picture/&gt;&lt;mobile_picture_type&gt;use_desktop_picture&lt;/mobile_picture_type&gt;&lt;model/&gt;&lt;name&gt;Ask a question&lt;/name&gt;&lt;no_attachment_v2&gt;true&lt;/no_attachment_v2&gt;&lt;no_cart&gt;false&lt;/no_cart&gt;&lt;no_cart_v2&gt;true&lt;/no_cart_v2&gt;&lt;no_delivery_time_v2&gt;true&lt;/no_delivery_time_v2&gt;&lt;no_order&gt;false&lt;/no_order&gt;&lt;no_order_now&gt;false&lt;/no_order_now&gt;&lt;no_proceed_checkout&gt;false&lt;/no_proceed_checkout&gt;&lt;no_quantity&gt;false&lt;/no_quantity&gt;&lt;no_quantity_v2&gt;true&lt;/no_quantity_v2&gt;&lt;no_search&gt;false&lt;/no_search&gt;&lt;no_wishlist_v2&gt;true&lt;/no_wishlist_v2&gt;&lt;omit_price&gt;false&lt;/omit_price&gt;&lt;order&gt;0&lt;/order&gt;&lt;ordered_item_link/&gt;&lt;owner display_value="System Administrator"&gt;6816f79cc0a8016401c5a33be04be441&lt;/owner&gt;&lt;picture/&gt;&lt;preview&gt;JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;amp;sysparm_id=0bc1bd5887501910496499383cbb3592&amp;amp;sysparm_preview=true", "summary");&lt;/preview&gt;&lt;price&gt;0&lt;/price&gt;&lt;published_ref/&gt;&lt;recurring_frequency/&gt;&lt;request_method&gt;submit&lt;/request_method&gt;&lt;roles/&gt;&lt;sc_catalogs/&gt;&lt;sc_ic_item_staging/&gt;&lt;sc_ic_version/&gt;&lt;sc_template display_value="AES Standard items in Service Catalog"&gt;03302dd377023010f082d599cf5a99ba&lt;/sc_template&gt;&lt;short_description&gt;Catalog Item to ask question to treat manager&lt;/short_description&gt;&lt;show_variable_help_on_load&gt;false&lt;/show_variable_help_on_load&gt;&lt;start_closed&gt;false&lt;/start_closed&gt;&lt;state&gt;published&lt;/state&gt;&lt;sys_class_name&gt;sc_cat_item&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-06-21 05:05:35&lt;/sys_created_on&gt;&lt;sys_id&gt;0bc1bd5887501910496499383cbb3592&lt;/sys_id&gt;&lt;sys_mod_count&gt;35&lt;/sys_mod_count&gt;&lt;sys_name&gt;Ask a question&lt;/sys_name&gt;&lt;sys_package display_value="Treat management" source="x_824599_treat_man"&gt;dc022bae87c09110496499383cbb35d3&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Treat management"&gt;dc022bae87c09110496499383cbb35d3&lt;/sys_scope&gt;&lt;sys_update_name&gt;sc_cat_item_0bc1bd5887501910496499383cbb3592&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-04 13:53:03&lt;/sys_updated_on&gt;&lt;taxonomy_topic/&gt;&lt;template/&gt;&lt;template_manager_roles/&gt;&lt;type&gt;item&lt;/type&gt;&lt;use_sc_layout&gt;true&lt;/use_sc_layout&gt;&lt;vendor/&gt;&lt;visible_bundle&gt;true&lt;/visible_bundle&gt;&lt;visible_guide&gt;true&lt;/visible_guide&gt;&lt;visible_standalone&gt;true&lt;/visible_standalone&gt;&lt;workflow/&gt;&lt;/sc_cat_item&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=0bc1bd5887501910496499383cbb3592"/&gt;&lt;fx_price action="delete_multiple" query="id=0bc1bd5887501910496499383cbb3592"/&gt;&lt;fx_price action="INSERT_OR_UPDATE"&gt;&lt;amount&gt;0&lt;/amount&gt;&lt;currency display_value="USD"&gt;USD&lt;/currency&gt;&lt;field&gt;price&lt;/field&gt;&lt;id&gt;0bc1bd5887501910496499383cbb3592&lt;/id&gt;&lt;parent/&gt;&lt;reference_amount&gt;0&lt;/reference_amount&gt;&lt;reference_currency display_value="USD"&gt;USD&lt;/reference_currency&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-06-21 05:05:35&lt;/sys_created_on&gt;&lt;sys_id&gt;c3c1bd5887501910496499383cbb3597&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-06-21 05:05:35&lt;/sys_updated_on&gt;&lt;table&gt;sc_cat_item&lt;/table&gt;&lt;type&gt;calculated&lt;/type&gt;&lt;/fx_price&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>821127207</payload_hash>
+        <record_name>Ask a question</record_name>
+        <reverted_from/>
+        <source>a58798be87849110496499383cbb3554</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-04 13:53:03</sys_created_on>
+        <sys_id>dc37626c87e41110496499383cbb351a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181c97c6d1f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-04 13:53:03</sys_updated_on>
+        <type>Catalog Item</type>
+        <update_guid>1837626c45e41110d0ed28b80cac0e1a</update_guid>
+        <update_guid_history>1837626c45e41110d0ed28b80cac0e1a:821127207,838d3554a4901910ba1f3347f0d1edd7:2057131410,0f8d35549d90191009672c638db538d0:-276948089,0f5739dcdc5019103713d6a8ff471457:2057131410,0b5739dc4a50191096aa0e9b725d8b51:18130518,be57f5dc07501910cbeaae658e5a19ec:-2101275614,3a57f5dc195019100c70b49ebc4151cd:1961999861,6247b5dc6b501910876acfea150d832f:-2101275614,a247b5dccc5019109a59cdd8ea30821c:1961999861,d24775dcf950191098be3703fe01f4f8:-2101275614,19c6b99cbb501910019be70bfcd6b9e1:-854303462,59c6b99c6f501910d1e1bc180090c3ce:-340393091,07a6399c445019100c33dc486e1268fd:-854303462,47a6399ce8501910daa6186b7cf80dea:-340393091,b6a6399ce2501910fc3dec51c48aaec6:-854303462,e0a6f59c37501910c6156d32745f95c5:-53191668,24a6f59c41501910f2f4072d787754b2:-1082465393,d504711c84501910d2468a92a295a4b3:-53191668,5104711c6650191036e9f3dfd42c6694:-1082465393,5904711ce050191051923fdbaaa22d7c:-53191668,d9f3311cbf50191001a2320aeff19326:2068080123,1df3311c49501910dd62124225939913:1054334144,dc9379d807501910dd466de8402bddd1:2068080123,489379d87350191045db1ad0ce762ab2:1054334144,938339d850501910334f9b5bf1334bf5:2068080123,c7623998ae501910cf0c3f50aee947f9:-152824800,43623998d9501910011b4a53ba86c7da:788461367,f66239985d50191051a743fa11d01ac2:-152824800,2e32759860501910f52a0fcfad63eb82:1537888866,f6223598ee5019103dc409cf19354b7b:788461367,0bc1bd58ce501910c68b805a99f08d9a:-391593879</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Ask a question">6c37626c87e41110496499383cbb354c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-04 13:53:04</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item">sc_cat_item</sys_db_object>
+        <sys_id>1b3a511948c94f29b9a2a62222b4f999</sys_id>
+        <sys_metadata>0bc1bd5887501910496499383cbb3592</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Ask a question</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_scope_delete display_value="">361f82dccbad477e9936bf359f1ceda4</sys_scope_delete>
+        <sys_update_name>sc_cat_item_0bc1bd5887501910496499383cbb3592</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_0bc1bd5887501910496499383cbb3592">dc37626c87e41110496499383cbb351a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-04 13:53:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
