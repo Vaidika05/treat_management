@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-04 12:45:47</sys_created_on>
+        <sys_id>7ec7162c87a41110496499383cbb35dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_824599_treat_man_question.x_824599_treat_man.treat_emp</sys_name>
+        <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+        <sys_security_acl display_value="x_824599_treat_man_question">b6c7162c87a41110496499383cbb35db</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_7ec7162c87a41110496499383cbb35dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-04 12:45:47</sys_updated_on>
+        <sys_user_role display_value="x_824599_treat_man.treat_emp" name="x_824599_treat_man.treat_emp">e3c3ef2287049110496499383cbb3515</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

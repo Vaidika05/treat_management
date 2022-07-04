@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="question" label="Question" language="en" table="x_824599_treat_man_question">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>question</element>
+            <help/>
+            <hint/>
+            <label>Question</label>
+            <language>en</language>
+            <name>x_824599_treat_man_question</name>
+            <plural>Questions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-04 12:58:18</sys_created_on>
+            <sys_id>16aa9aec87a41110496499383cbb357b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Question</sys_name>
+            <sys_package display_value="Treat management" source="x_824599_treat_man">dc022bae87c09110496499383cbb35d3</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Treat management">dc022bae87c09110496499383cbb35d3</sys_scope>
+            <sys_update_name>sys_documentation_x_824599_treat_man_question_question_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-04 12:58:18</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
